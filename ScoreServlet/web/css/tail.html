@@ -1,0 +1,105 @@
+
+
+   <!DOCTYPE html>
+  <html>
+  <head>
+       <meta charset="UTF-8">
+           <title>鼠标彩色拖尾小效果</title>
+           <meta name="author" content="郭菊锋/702004176@qq.com"/>
+           <style type="text/css">
+               *{margin: 0;padding: 0;}
+               body div{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 332px;
+    top: 118px;                  /*margin: 10px;*/                  /*background: rgb(255,255,255);*/
+              }
+           </style>
+          <script type="text/javascript">
+              window.onload = function(){
+                  function getColor(){
+                      var oMath = Math.floor(Math.random()*255);
+                console.log(maTh)
+            var rgb = "rgb("+
+                   Math.floor(Math.random()*255)+","+
+                    Math.floor(Math.random()*255)+","+
+                 Math.floor(Math.random()*255)+")";
+                     return rgb;
+              }
+                    console.log(getColor())
+              var oDiv = document.getElementsByTagName("div");
+ 
+             window.onmousemove = function(ev){
+                 for(var i=0;i<oDiv.length;i++){
+                          oDiv[i].style.backgroundColor = getColor();
+                      }
+                      var ev = ev || window.event;
+                      var oScrollleft = document.documentElement.scrollleft || document.body.scrollLeft;
+                      var oScrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+                      var oLeft = ev.clientX + oScrollleft + "px";
+                      var oTop = ev.clientY + oScrolltop + "px";
+  //                    for(var a = oDiv.length;a>0;a++){
+  //                        oDiv[a].style.top = oDiv[a-1].style.top;
+ //                        oDiv[a].style.left = oDiv[a-1].style.left;
+                      for(var a = oDiv.length-1;a>0;a--){
+                          oDiv[a].style.top = oDiv[a-1].offsetTop + "px";
+                          oDiv[a].style.left = oDiv[a-1].offsetLeft + "px";
+                      }
+                     oDiv[0].style.top = oTop;
+                     oDiv[0].style.left = oLeft;
+               }
+
+            }
+          </script>
+   </head>
+     <body>
+ <h3>鼠标移进来试试</h3>
+		
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+        <div></div>
+       <div></div>
+      <div></div>
+
+         <div></div>
+       <div></div>
+      <div></div>
+
+        <div></div>
+    </body>
+ </html>
+

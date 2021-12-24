@@ -28,13 +28,12 @@
 	padding: 0;
 }
 .li-sty{
-	left: 20%;
-	height: 50px;
-	font-size: 40px;
+	left: 19%;
+	height: 30px;
+	font-size: 35px;
 	cursor: pointer;
-	line-height: 100px;
-	color: aliceblue;
-	float:left;
+	line-height: 80px;
+	color: #5a91d7;
 }
 .li-sty1{
 	height: 50px;
@@ -47,7 +46,7 @@
 .navbar{
 	height: 100px;
 	margin: 0;
-	background-image: linear-gradient( #82a2a8 20%, #727e8f 70%)
+	background-image: linear-gradient( #bf8ca7 20%, #93b5e6 70%);
 }
 .navbar ul{
 	width: 100%;
@@ -79,8 +78,12 @@ window.onload = function(){
 	<div class="div_body">
 		<nav class="navbar">
 			<ul class="nav navbar-nav " style="border-bottom:#517fa4 2px">
-				<li class="li-sty">学生成绩管理系统<i class="fa fa-magic" aria-hidden="true"></i></li>
-				<li class="li-sty1" style="float:right;"><a href="ServletLogout" >退出</a></li>
+
+				<li class="li-sty" style="font-size: 35px;line-height: 91px;letter-spacing: 0.386em;font-weight: 500;font-style: italic;">学生成绩管理系统<i class="fa fa-magic" aria-hidden="true"></i></li>
+				<li class="li-sty1" style="float:right;">
+					<a href="ServletLogout" style="color: #bf5454;font-size: 20px;font-weight: 400;font-style: normal;letter-spacing: 0.165em;">退出</a>
+				</li>
+
 			</ul>
 		</nav>
 		<div class="aside">
@@ -115,7 +118,7 @@ window.onload = function(){
 			style="HEIGHT: 130%; VISIBILITY: inherit; WIDTH: 100%; Z-INDEX: 1"></iframe>
 		</div>
 	</div>
-	
+
 	<script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

@@ -37,6 +37,12 @@ display: inline-block
 width:200px;
 display: inline-block
 }
+.panel-default > .panel-heading {
+	color: #e070af;
+	background-color: #d1e9ff;
+	border-color: #bcdfff;
+}
+
 </style>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 

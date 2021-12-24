@@ -33,7 +33,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	margin-left:20%;
 }
 font {
-	color: red;
+	color: #d5a1dd;
 	font-weight: bold;
 	text-align: center;
 }

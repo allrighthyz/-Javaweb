@@ -17,7 +17,7 @@ public class ServletEditStudentInfo extends HttpServlet{
 	private Student student;
 	private StudentServiceImpl studentServiceImpl=new StudentServiceImpl();
 	private ServletSelectStudentInfo findStu=new ServletSelectStudentInfo();
-	
+	//
 	public void doGet(HttpServletRequest request,HttpServletResponse response)
 			throws ServletException,IOException{
 		String stuNum=request.getParameter("stuNum");

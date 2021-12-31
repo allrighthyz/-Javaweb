@@ -20,7 +20,7 @@ public class ServletOneStudentScore extends HttpServlet{
 		
 		doPost(req, resp);
 	}
-
+//
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

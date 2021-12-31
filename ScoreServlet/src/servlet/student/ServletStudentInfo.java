@@ -27,7 +27,7 @@ public class ServletStudentInfo extends HttpServlet{
 		request.setAttribute("list", rs);
 		request.getRequestDispatcher("student/studentInfo.jsp").forward(request, response);
 	
-		
+		//
 	}
 	public void doPost(HttpServletRequest request,HttpServletResponse response)
 			throws ServletException,IOException{

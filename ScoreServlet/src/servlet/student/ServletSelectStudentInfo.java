@@ -26,7 +26,7 @@ public class ServletSelectStudentInfo extends HttpServlet{
 		
 		request.setAttribute("list", rs);
 		request.getRequestDispatcher("student/editStudentInfo.jsp").forward(request, response);
-	
+	//
 		
 	}
 	public void doPost(HttpServletRequest request,HttpServletResponse response)

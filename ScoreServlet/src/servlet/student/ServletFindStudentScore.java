@@ -20,7 +20,7 @@ public class ServletFindStudentScore extends HttpServlet{
 	
 	private Student student;
 	private ScoreServiceImpl scoreServiceImpl=new ScoreServiceImpl();
-	
+	//
 	public void doGet(HttpServletRequest request,HttpServletResponse response)
 			throws ServletException,IOException{
 		int pageNo=1;

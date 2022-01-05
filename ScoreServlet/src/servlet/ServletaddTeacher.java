@@ -59,7 +59,6 @@ public class ServletaddTeacher extends HttpServlet{
 			request.setAttribute("msg", "该工号已存在，请重新录入！！");
 			request.getRequestDispatcher("admin/addTeacher.jsp").forward(request, response);
 		}
-		
 
 	}
 

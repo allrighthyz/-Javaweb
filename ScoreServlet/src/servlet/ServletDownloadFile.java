@@ -71,8 +71,7 @@ public class ServletDownloadFile extends HttpServlet{
 		while((len=fis.read(buffer))>0){
 			os.write(buffer, 0, len);
 		}
-		
-	
+
 		fis.close();
 		os.close();
 		
